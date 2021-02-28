@@ -5,23 +5,18 @@ import Home from './pages/home/Home'
 import Projects from './pages/projects/Projects'
 import Personal from './pages/personal/Personal'
 import Theme from './context/Theme'
+import { ThemeProvider } from './ThemeContext'
 
-export const ThemeContext = React.createContext()
 
 function App() {
-  const [darkTheme, setDarkTheme] = useState(true)
-
-  function toggleTheme() {
-    setDarkTheme(prev => !prev)
-  }
-
+  
   return (
     <Router>
-      <ThemeContext.Provider value={darkTheme} >
+      <ThemeProvider  >
       <Nav />
         <Switch>
           <Route path="/projects">
-          <Theme toggleTheme={toggleTheme}/>
+          <Theme />
             <Projects />
           </Route>
           <Route path="/personal">
@@ -31,7 +26,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </ThemeContext.Provider>
+      </ThemeProvider>
     </Router>
   );
 }

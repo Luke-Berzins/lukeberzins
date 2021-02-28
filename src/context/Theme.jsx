@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from '../App'
+import { useTheme, useThemeUpdate } from '../ThemeContext'
 
 export default function Theme(props) {
-  const darkTheme = useContext(ThemeContext)
+  const darkTheme = useTheme()
+  const toggleTheme = useThemeUpdate()
   const themeStyles = {
     backgroundColor: darkTheme ? '#333' : '#CCC',
     color: darkTheme ? '#CCC' : '#333',
@@ -14,8 +15,8 @@ export default function Theme(props) {
       <br></br>
       <br></br>
       <br></br>
-      <h1 style= {themeStyles}>Function Theme</h1>
-      <button onClick={props.toggleTheme}>Hi</button>
+      <h1 style={themeStyles}>Function Theme</h1>
+      <button onClick={toggleTheme}>Hi</button>
       
       </div>
   )
