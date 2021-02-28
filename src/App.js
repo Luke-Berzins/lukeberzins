@@ -21,6 +21,7 @@ function App() {
       <Nav />
         <Switch>
           <Route path="/projects">
+          <Theme toggleTheme={toggleTheme}/>
             <Projects />
           </Route>
           <Route path="/personal">
