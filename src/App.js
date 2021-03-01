@@ -7,7 +7,6 @@ import Personal from './pages/personal/Personal'
 import Theme from './context/Theme'
 import { ThemeProvider } from './ThemeContext'
 
-
 function App() {
   
   return (

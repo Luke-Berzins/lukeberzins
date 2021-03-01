@@ -1,0 +1,19 @@
+$defaultBackground: white;
+$darkBackground: black;
+
+
+@mixin theme($dark-theme: true) {
+  @if $dark-theme {
+    background-color: $darkBackground;
+    color: white;
+  }
+}
+
+
+.default {
+  background-color: $defaultBackground;
+}
+
+.dark {
+  @include theme($dark-theme: true)
+}
