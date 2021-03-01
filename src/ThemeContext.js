@@ -31,6 +31,9 @@ export function ThemeProvider({ children }) {
 
   function toggleCat() {
     setCat(prev => !prev)
+    const favicon = document.getElementById('favicon')
+    document.title === 'Luke Berzins' ? favicon.href  = 'meow.ico' : favicon.href = 'favicon.ico'
+    document.title === 'Luke Berzins' ? document.title = 'Meow' : document.title = 'Luke Berzins'
 }
 
   return (

@@ -11,30 +11,34 @@ export default function Nav() {
   const cat = useCatTheme()
   const toggleCat = useCatUpdate()
 
-
   return (
       <div className={theme}>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">projects</Link>
-            </li>
-            <li>
-              <Link to="/personal">personal</Link>
-            </li>
-            <li>
+          <div className="navbar-item">
+            <p>
+              <Link to="/">{cat ? 'meow' : 'home'}</Link>
+            </p>
+            <p>
+              <Link to="/projects">{cat ? 'meow' : 'projects'}</Link>
+            </p>
+            <p>
+              <Link to="/personal">{cat ? 'meow' : 'personal'}</Link>
+            </p>
+            <div>
+            <p>
             <button onClick={() => toggleTheme('default')}>Normal Mode</button>
-            </li>
-            <li>
+            </p>
+            <p>
             <button onClick={() => toggleTheme('dark')}>Dark Mode</button>
-            </li>
-            <li>
+            </p>
+            <p>
             <button onClick={() => toggleTheme('party')}>Party Mode</button>
-            </li>
-          </ul>
+            </p>
+            <p>
+            <button onClick={() => toggleCat()}>Toggle Cat</button>
+            </p>
+            </div>
+          </div>
         </nav>
       </div>
   );
