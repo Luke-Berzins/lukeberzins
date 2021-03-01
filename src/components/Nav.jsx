@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useTheme, useThemeUpdate } from '../ThemeContext'
 import {
   Link
@@ -6,12 +6,12 @@ import {
 import './Nav.scss'
 
 export default function Nav() {
-  const darkTheme = useTheme()
+  const theme = useTheme()
   const toggleTheme = useThemeUpdate()
-  const themeStyles = darkTheme ? 'dark' : 'default'
+
 
   return (
-      <div className={themeStyles}>
+      <div className={theme}>
         <nav>
           <ul>
             <li>
@@ -24,7 +24,13 @@ export default function Nav() {
               <Link to="/personal">personal</Link>
             </li>
             <li>
-            <button onClick={toggleTheme}>Hi</button>
+            <button onClick={() => toggleTheme('default')}>Normal Mode</button>
+            </li>
+            <li>
+            <button onClick={() => toggleTheme('dark')}>Dark Mode</button>
+            </li>
+            <li>
+            <button onClick={() => toggleTheme('party')}>Party Mode</button>
             </li>
           </ul>
         </nav>

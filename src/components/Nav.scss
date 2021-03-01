@@ -1,13 +1,8 @@
 $defaultBackground: white;
 $darkBackground: black;
+$partyBackground: pink;
 
 
-@mixin theme($dark-theme: true) {
-  @if $dark-theme {
-    background-color: $darkBackground;
-    color: white;
-  }
-}
 
 
 .default {
@@ -15,5 +10,11 @@ $darkBackground: black;
 }
 
 .dark {
-  @include theme($dark-theme: true)
+  background-color: $darkBackground;
+    color: white;
+}
+
+.party {
+  background-color: $partyBackground;
+    color: green;
 }
