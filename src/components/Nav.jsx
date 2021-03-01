@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme, useThemeUpdate } from '../ThemeContext'
+import { useTheme, useThemeUpdate, useCatTheme, useCatUpdate } from '../ThemeContext'
 import {
   Link
 } from "react-router-dom";
@@ -8,6 +8,8 @@ import './Nav.scss'
 export default function Nav() {
   const theme = useTheme()
   const toggleTheme = useThemeUpdate()
+  const cat = useCatTheme()
+  const toggleCat = useCatUpdate()
 
 
   return (

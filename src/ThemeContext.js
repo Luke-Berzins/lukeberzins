@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react'
 
 const ThemeContext = React.createContext()
 const ThemeUpdateContext = React.createContext()
+const CatContext = React.createContext()
+const CatUpdateContext = React.createContext()
 
 export function useTheme() {
   return useContext(ThemeContext)
@@ -11,19 +13,34 @@ export function useThemeUpdate() {
   return useContext(ThemeUpdateContext)
 }
 
+export function useCatTheme() {
+  return useContext(CatContext)
+}
+
+export function useCatUpdate() {
+  return useContext(CatUpdateContext)
+}
+
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState('default')
+  const [cat, setCat] = useState(false)
 
   function toggleTheme(input) {
-    console.log(input)
       setTheme(prev => input)
-      console.log(theme)
   }
+
+  function toggleCat() {
+    setCat(prev => !prev)
+}
 
   return (
     <ThemeContext.Provider value = {theme}>
       <ThemeUpdateContext.Provider value={toggleTheme}>
-      { children }
+        <CatContext.Provider value={cat}>
+          <CatUpdateContext.Provider value={toggleCat}>
+            { children }
+          </CatUpdateContext.Provider>
+        </CatContext.Provider>
       </ThemeUpdateContext.Provider>
     </ThemeContext.Provider>
   )

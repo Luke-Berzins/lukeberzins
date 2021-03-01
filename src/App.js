@@ -4,7 +4,6 @@ import Nav from './components/Nav'
 import Home from './pages/home/Home'
 import Projects from './pages/projects/Projects'
 import Personal from './pages/personal/Personal'
-import Theme from './context/Theme'
 import { ThemeProvider } from './ThemeContext'
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Nav />
         <Switch>
           <Route path="/projects">
-          <Theme />
             <Projects />
           </Route>
           <Route path="/personal">
