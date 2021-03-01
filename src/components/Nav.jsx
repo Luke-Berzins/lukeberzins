@@ -25,10 +25,10 @@ export default function Nav() {
                 <Link className="navLink" to="/personal">{cat ? 'meow' : 'personal'}</Link>
               </div>
               <div className="nav-buttons">
-                <button onClick={() => toggleTheme('default')}>Normal Mode</button>
-                <button onClick={() => toggleTheme('dark')}>Dark Mode</button>
-                <button onClick={() => toggleTheme('party')}>Party Mode</button>
-                <button onClick={() => toggleCat()}>CAT MODE</button>
+                <button className="btn btn--stripe" onClick={() => toggleTheme('default')}>Normal Mode</button>
+                <button className="btn btn--stripe" onClick={() => toggleTheme('dark')}>Dark Mode</button>
+                <button className="btn btn--stripe" onClick={() => toggleTheme('party')}>Party Mode</button>
+                <button className="btn btn--stripe" onClick={() => toggleCat()}>{cat ? 'please click' : 'do not click'}</button>
               </div>
             </div>
           </div>
