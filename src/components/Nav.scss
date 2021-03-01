@@ -1,9 +1,34 @@
-$defaultBackground: white;
-$darkBackground: black;
-$partyBackground: pink;
+$defaultBackground: rgb(140, 205, 235);
+$darkBackground: rgb(119, 118, 118);
+$partyBackground: rgb(137, 65, 146);
 
 
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 150%;
+  
+  .cool-guy{
+    margin:1rem;
+    img {
+      padding: 1rem;
+    }
+  }
+  .navfunctions {
+    display:flex;
+    .site-nav {
+      margin: 3rem;
+      .navLink {
+        margin: 1rem;
+      }
+    }
+    .nav-buttons {
+      padding: 3rem;
+    }
+  }
 
+}
 
 .default {
   background-color: $defaultBackground;

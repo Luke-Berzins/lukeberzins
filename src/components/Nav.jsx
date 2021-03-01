@@ -14,29 +14,22 @@ export default function Nav() {
   return (
       <div className={theme}>
         <nav>
-          <div className="navbar-item">
-            <p>
-              <Link to="/">{cat ? 'meow' : 'home'}</Link>
-            </p>
-            <p>
-              <Link to="/projects">{cat ? 'meow' : 'projects'}</Link>
-            </p>
-            <p>
-              <Link to="/personal">{cat ? 'meow' : 'personal'}</Link>
-            </p>
-            <div>
-            <p>
-            <button onClick={() => toggleTheme('default')}>Normal Mode</button>
-            </p>
-            <p>
-            <button onClick={() => toggleTheme('dark')}>Dark Mode</button>
-            </p>
-            <p>
-            <button onClick={() => toggleTheme('party')}>Party Mode</button>
-            </p>
-            <p>
-            <button onClick={() => toggleCat()}>Toggle Cat</button>
-            </p>
+          <div className="navbar-container">
+            <div className="cool-guy">
+              {cat ? <img alt='kittypic' src='meow.ico'></img> : <h1>Luke Berzins</h1>}
+            </div>
+            <div className='navfunctions'>
+              <div className="site-nav">
+                <Link className="navLink" to="/">{cat ? 'meow' : 'home'}</Link>
+                <Link className="navLink" to="/projects">{cat ? 'meow' : 'projects'}</Link>
+                <Link className="navLink" to="/personal">{cat ? 'meow' : 'personal'}</Link>
+              </div>
+              <div className="nav-buttons">
+                <button onClick={() => toggleTheme('default')}>Normal Mode</button>
+                <button onClick={() => toggleTheme('dark')}>Dark Mode</button>
+                <button onClick={() => toggleTheme('party')}>Party Mode</button>
+                <button onClick={() => toggleCat()}>CAT MODE</button>
+              </div>
             </div>
           </div>
         </nav>
