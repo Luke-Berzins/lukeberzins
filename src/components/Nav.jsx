@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme, useThemeUpdate, useCatTheme, useCatUpdate } from '../ThemeContext'
+import { useTheme, useCatTheme } from '../ThemeContext'
 import {
   Link
 } from "react-router-dom";
@@ -7,9 +7,7 @@ import './Nav.scss'
 
 export default function Nav() {
   const theme = useTheme()
-  const toggleTheme = useThemeUpdate()
   const cat = useCatTheme()
-  const toggleCat = useCatUpdate()
 
   return (
       <div className={theme}>
@@ -23,15 +21,9 @@ export default function Nav() {
                 <Link className="navLink" to="/">{cat ? 'meow' : 'home'}</Link>
                 <Link className="navLink" to="/projects">{cat ? 'meow' : 'projects'}</Link>
                 <Link className="navLink" to="/personal">{cat ? 'meow' : 'personal'}</Link>
-              </div>
-              <div className="nav-buttons">
-                <button className="btn btn--stripe" onClick={() => toggleTheme('default')}>Normal Mode</button>
-                <button className="btn btn--stripe" onClick={() => toggleTheme('dark')}>Dark Mode</button>
-                <button className="btn btn--stripe" onClick={() => toggleTheme('party')}>Party Mode</button>
-                <button className="btn btn--stripe" onClick={() => toggleCat()}>{cat ? 'please click' : 'do not click'}</button>
-              </div>
             </div>
           </div>
+        </div>
         </nav>
       </div>
   );
