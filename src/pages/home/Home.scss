@@ -215,11 +215,17 @@ body{
   0% {
     transform: rotate(0deg);
   }
-  25% {
+  10% {
     transform: rotate(25deg);
   }
-  75% {
+  30% {
     transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(-180deg);
   }
   100% {
     transform: rotate(0deg);
@@ -229,7 +235,7 @@ body{
   color: rgba(235, 77, 66, 0.808);
   
     img {
-      animation: rotation 10s infinite linear;
+      animation: rotation 30s infinite linear;
 
     }    
     p {
@@ -273,7 +279,8 @@ body{
               left: 0;
               bottom: 0;
               background-size: $stripe-height $stripe-height;
-          }
+              animation: stripe-slide 12s infinite linear forwards;             
+            }
     
           &:hover {
               background-color: $partyBackground;

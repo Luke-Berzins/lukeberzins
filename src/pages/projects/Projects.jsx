@@ -10,9 +10,11 @@ export default function Projects(props) {
 
   return (
     <div className={theme}>
-      <h1>
-        I am projects
-      </h1>
+      <div className="projects-body">
+
+      <div className="projects-intro">
+        <h1>Luke's Projects</h1>
+      </div>
       <div className="project-item-holder">
       <ProjectItem 
         className=""
@@ -27,7 +29,9 @@ export default function Projects(props) {
         description="Make an appoinment!"
       />
       </div>
+      </div>
       <div className="finalfill"></div>
+
     </div>
   )
 }
