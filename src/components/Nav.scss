@@ -28,6 +28,7 @@ $border-color-hover: $color-black;
     .site-nav {
       margin: 5rem;
       .navLink {
+        font-family: 'Recursive', sans-serif;
         margin: 1rem;
       }
     }
@@ -42,9 +43,28 @@ $border-color-hover: $color-black;
 .dark {
   background-color: $darkBackground;
   color: white;
+  .navfunctions {
+    display:flex;
+    .site-nav {
+      margin: 5rem;
+      .navLink {
+        color: white;
+        margin: 1rem;
+      }
+    }
+  }
 }
 
 .party {
   background-color: $partyBackground;
-  color: green;
+  .navfunctions {
+    display:flex;
+    .site-nav {
+      margin: 5rem;
+      .navLink {
+        color: rgba(240, 45, 45, 0.795);
+        margin: 1rem;
+      }
+    }
+  }
 }

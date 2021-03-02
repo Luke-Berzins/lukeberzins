@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme, useCatTheme } from '../ThemeContext'
 import {
-  Link
+  NavLink
 } from "react-router-dom";
 import './Nav.scss'
 
@@ -18,9 +18,9 @@ export default function Nav() {
             </div>
             <div className='navfunctions'>
               <div className="site-nav">
-                <Link className="navLink" to="/">{cat ? 'meow' : 'home'}</Link>
-                <Link className="navLink" to="/projects">{cat ? 'meow' : 'projects'}</Link>
-                <Link className="navLink" to="/personal">{cat ? 'meow' : 'personal'}</Link>
+                <NavLink className="navLink" to="/">{cat ? 'meow' : 'home'}</NavLink>
+                <NavLink className="navLink" to="/projects">{cat ? 'meow' : 'projects'}</NavLink>
+                <NavLink className="navLink" to="/personal">{cat ? 'meow' : 'personal'}</NavLink>
             </div>
           </div>
         </div>

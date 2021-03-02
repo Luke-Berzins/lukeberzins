@@ -20,9 +20,11 @@ export default function Home(props) {
           {cat ? <img alt="good-looking-dude" src="kitty/kitty-main.jpeg"></img> : <img alt="good-looking-dude" src="me.jpeg"></img>}
         </div>
         <div className="personal-text">
-        {cat ? <p>Hello good friends. I'm fatcat and I like to eat. Everything Luke owns is mine and now this website is mine. You can still click aroung to see some projects and learn more about my servant.</p> : <p>Hello good friends. I'm Luke and I like learning new things and making cool stuff happen. This is my website where you can get an idea of who I am. See portfolio to see some of the stuff I've done, and see my personal page to learn more about me. I've added some options below so you can personalize your experience on my personal website.</p>}
+        {cat ? <p>Hello good friends. I'm fatcat and I like to eat. Everything Luke owns is mine and now this website is mine. You can still click around to see some projects and learn more about my servant.</p> : <p>Hello good friends. I'm Luke and I like learning new things and making cool stuff happen. This is my website where you can get an idea of who I am. See portfolio to see some of the stuff I've done, and see my personal page to learn more about me. I've added some options so you can personalize your experience on my personal website.</p>}
         </div>
+        
       </div>
+      <div className="finalfill"></div>
     </div>
   )
 }
