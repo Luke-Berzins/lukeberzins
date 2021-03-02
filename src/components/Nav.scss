@@ -26,17 +26,27 @@
 
 .default {
   background-color: $defaultBackground;
-}
-
-.dark {
-  background-color: $darkBackground;
-  color: $darkTextcolor;
   .navfunctions {
     display:flex;
     .site-nav {
       margin: 5rem;
       .navLink {
-        color: $darkTextcolor;
+        color: $defaultTextColor;
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+.dark {
+  background-color: $darkBackground;
+  color: $darkTextColor;
+  .navfunctions {
+    display:flex;
+    .site-nav {
+      margin: 5rem;
+      .navLink {
+        color: $darkTextColor;
         margin: 1rem;
       }
     }
@@ -45,12 +55,13 @@
 
 .party {
   background-color: $partyBackground;
+  color: $partyTextColor;
   .navfunctions {
     display:flex;
     .site-nav {
       margin: 5rem;
       .navLink {
-        color: rgba(240, 45, 45, 0.795);
+        color: $partyTextColor;
         margin: 1rem;
       }
     }

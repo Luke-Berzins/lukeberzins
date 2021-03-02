@@ -19,7 +19,7 @@ export default function Projects(props) {
           name="Reflexion"
           picture=""
           description="Uses voice Recognition with Tensorflow and google's  Teachable Machine"
-          git=""
+          git="www."
           site=""
           display=""
           stack=""
