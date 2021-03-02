@@ -22,17 +22,18 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    h1 {
+      font-family: $alt-text;
+    }
   }
 }
 
 .default {
   background-color: $defaultBackground;
   .projects-intro{
-    padding-top: 4rem;
+    padding-top: 1rem;
     background-color: $defaultBackground;
-    h1 {
-      font-family: $alt-text;
-    }
+
   }
   .finalfill {
       width: 100%;
@@ -43,9 +44,9 @@ body{
 
 .dark {
   background-color: $darkBackground;
-  color: white;
+  color: $darkTextcolor;
   .projects-intro{
-    padding-top: 4rem;
+    padding-top: 1rem;
     background-color: $darkBackground;
   }
     .finalfill {
@@ -58,7 +59,7 @@ body{
 .party {
   color: rgba(235, 77, 66, 0.808);
   .projects-intro{
-    padding-top: 4rem;
+    padding-top: 1rem;
     background-color: $partyBackground;
   }
     

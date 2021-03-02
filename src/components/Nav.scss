@@ -30,13 +30,13 @@
 
 .dark {
   background-color: $darkBackground;
-  color: white;
+  color: $darkTextcolor;
   .navfunctions {
     display:flex;
     .site-nav {
       margin: 5rem;
       .navLink {
-        color: white;
+        color: $darkTextcolor;
         margin: 1rem;
       }
     }

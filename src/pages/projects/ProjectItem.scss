@@ -1,0 +1,82 @@
+@import "../../variable";
+
+.project-item-body {
+
+  h4 {
+    font-family: $alt-text;
+    font-size: x-large;
+  }
+  p {
+    font-size: x-large;
+  }
+  .project-card {
+    width: 60%;
+    height: 4rem;
+    .slider{
+      background-color: rgb(255, 228, 228);
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute
+    }
+  }
+  
+
+  .project-card:hover .slider {
+    transform: translateX(100%);
+  }
+
+  .projectInfo {
+    display: flex;
+    p {
+      font-size: x-large;
+    }
+  }
+  
+  .default {
+    .slider{
+      background-color: rgb(255, 228, 228);
+      
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute
+    }
+  }
+  
+  .dark {
+    .slider{
+      background-color: rgb(211, 74, 74);
+      
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute
+    }
+  }
+  
+  .party {
+    .slider{
+      background-color: rgb(255, 228, 228);
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute
+    }
+  }
+}
+
+
+
+
+
+
+

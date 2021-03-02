@@ -142,7 +142,7 @@ body{
 
 .dark {
   background-color: $darkBackground;
-  color: white;
+  color: $darkTextcolor;
   p {
     background-color: $darkBackground;
     margin-top: 0;
@@ -232,14 +232,13 @@ body{
   }
 }
 .party {
-  color: rgba(235, 77, 66, 0.808);
+  color: $partyTextColor
   
     img {
       animation: rotation 30s infinite linear;
 
     }    
     p {
-      $partyBackground: rgb(137, 65, 146);
       margin-top: 0;
     }
   
