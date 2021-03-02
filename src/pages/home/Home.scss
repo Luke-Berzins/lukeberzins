@@ -1,6 +1,6 @@
 $defaultBackground: rgb(140, 205, 235);
 $darkBackground: rgb(119, 118, 118);
-$partyBackground: rgb(137, 65, 146);
+$partyBackground: rgb(199, 123, 209);
 $color-gray: #666;
 $color-black: #000;
 $stripe-height: 7px;
@@ -9,6 +9,7 @@ $btn-background: #fff;
 $btn-color-hover: #fff;
 $border-color: $color-gray;
 $border-color-hover: $color-black;
+
 
 
 .personal-block {
@@ -53,6 +54,11 @@ $border-color-hover: $color-black;
 
 .default {
   background-color: $defaultBackground;
+
+  .personal-text {
+    background-color: $defaultBackground;
+  }
+
   .btn {
     @include reset-button;
     display: block;
@@ -114,7 +120,7 @@ $border-color-hover: $color-black;
 
 .dark {
   background-color: $darkBackground;
-    color: white;
+  color: white;
     .btn {
       @include reset-button;
       display: block;
@@ -174,9 +180,29 @@ $border-color-hover: $color-black;
     }
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .party {
-  background-color: $partyBackground;
-  color: green;
+  color: rgba(235, 77, 66, 0.808);
+  
+    img {
+      animation: rotation 20s infinite linear;
+
+    }    
+  
+  
     .btn {
       @include reset-button;
       display: block;
