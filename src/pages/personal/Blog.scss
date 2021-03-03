@@ -1,0 +1,38 @@
+@import '../../variable';
+
+
+.default {
+  background-color: $defaultBackground;
+  color: $defaultBackground;
+  .normal {
+    display: flex;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.dark {
+  background-color: $darkBackground;
+  color: $darkTextColor;
+  .normal {
+    display: flex;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.party {
+  background-color: $partyBackground;
+  color: $partyTextColor;
+  .normal {
+    display: flex;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

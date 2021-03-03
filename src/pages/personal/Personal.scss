@@ -1,0 +1,82 @@
+@import "../../variable";
+
+
+html{
+  min-height:100%;
+  position:relative;
+}
+body{
+  height:100%; 
+  p {
+    font-family: 'Recursive', sans-serif;
+  }
+  .personal-holder {
+    margin-left: 15%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    h1 {
+      font-family: $alt-text;
+    }
+    .personal-intro {
+      padding-top: 1rem;
+    }
+    .personal-info {
+      display: flex;
+      h3 {
+        padding-right: 3rem;
+      }
+    }
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .blog-holder {
+    width: 60%;
+    margin: 4rem;
+  }
+}
+
+.default {
+  background-color: $defaultBackground;
+  color: $defaultBackground;
+  .projects-intro{
+    background-color: $defaultBackground;
+
+  }
+  .finalfill {
+      width: 100%;
+      height: 800px;
+      background-color:$defaultBackground;
+  }
+}
+
+.dark {
+  background-color: $darkBackground;
+  color: $darkTextColor;
+  .projects-intro{
+    background-color: $darkBackground;
+  }
+    .finalfill {
+      width: 100%;
+      height: 800px;
+      background-color:$darkBackground;
+  }
+}
+
+.party {
+  background-color: $partyBackground;
+  color: $partyTextColor;
+  .projects-intro{
+    background-color: $partyBackground;
+  }
+    
+    .finalfill {
+      width: 100%;
+      height: 800px;
+      background-color:$partyBackground;
+  }
+}
