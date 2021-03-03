@@ -69,6 +69,7 @@ body{
 
 .default {
   background-color: $defaultBackground;
+  color: $defaultTextColor;
   .personal-text {
     background-color: $defaultBackground;
   }
@@ -153,8 +154,8 @@ body{
       text-decoration: none;
       text-transform: uppercase;
       padding: 16px 36px 22px;
-      background-color: $btn-background;
-      color: $btn-color;
+      background-color: $darkBackground;
+      color: $btn-color-hover;
       border: 2px solid $border-color;
       border-radius: 6px;
       margin-bottom: 16px;
@@ -247,8 +248,8 @@ body{
       text-decoration: none;
       text-transform: uppercase;
       padding: 16px 36px 22px;
-      background-color: $btn-background;
-      color: $btn-color;
+      background: linear-gradient(to top, #3838e7b7 0%, #7f6ca7de 100%);
+      color: $darkTextColor;
       border: 2px solid $border-color;
       border-radius: 6px;
       margin-bottom: 16px;
@@ -257,6 +258,7 @@ body{
       &--stripe {
           overflow: hidden;
           position: relative;
+          
           
           &:after {
               content: '';
@@ -277,7 +279,9 @@ body{
               left: 0;
               bottom: 0;
               background-size: $stripe-height $stripe-height;
-              animation: stripe-slide 12s infinite linear forwards;             
+              animation: stripe-slide 12s infinite linear forwards;
+              color: $btn-color-hover;
+              border-color: $border-color-hover;            
             }
     
           &:hover {

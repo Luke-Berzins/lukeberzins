@@ -17,7 +17,7 @@ export default function ProjectItem(props) {
         </div>
       <div className="projectInfo">
         <div>
-          {props.git ? <p>Github: {props.git}</p> : <p></p>}
+          <a href={props.git}>{props.git ? <p>Github: {props.git}</p> : <p></p>}</a>
           {props.site ? <p>Live site:{props.site}</p> : <p></p>}
         </div>
       </div>
