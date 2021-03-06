@@ -24,6 +24,14 @@ body{
       margin-left: 5%;
       margin-right: 5%;
     }
+    .extra-links {
+      display: flex;
+      align-self: center;
+      h3 {
+        padding-right: 3rem;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
   }
 
 .personal-block {
@@ -76,6 +84,10 @@ body{
   p {
     background-color: $defaultBackground;
     margin-top: 0;
+  }
+  .navLink {
+    color: $defaultTextColor;
+    margin: 1rem;
   }
   .btn {
     @include reset-button;
@@ -147,6 +159,10 @@ body{
   p {
     background-color: $darkBackground;
     margin-top: 0;
+  }
+  .navLink {
+    color: $darkTextColor;
+    margin: 1rem;
   }
     .btn {
       @include reset-button;
@@ -242,6 +258,11 @@ body{
       margin-top: 0;
     }
   
+    .navLink {
+      color: $partyTextColor;
+      margin: 1rem;
+    }
+
     .btn {
       @include reset-button;
       display: block;
