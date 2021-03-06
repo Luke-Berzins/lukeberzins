@@ -1,69 +1,133 @@
 @import "../variable";
 
-.navbar-container{
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  font-size: 150%;
+
+@media only screen and (max-width: 900px) {
+  .cool-guy{
+    font-family: 'Kaushan Script', cursive;
+  }
+
+  .navbar-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+    align-items: flex-start;
+    margin-left: 2rem;
+    
+    .navfunctions {
+      .site-nav {
+        display:flex;
+        flex-direction: column;
+     
+        .navLink {
+          font-family: 'Recursive', sans-serif;
+        }
+      }
+    }
   
+  }
+  
+  .default {
+    background-color: $defaultBackground;
+      
+        .navLink {
+          color: $defaultTextColor;
+          margin: 1rem;
+        }
+      
+  }
+  
+  .dark {
+    background-color: $darkBackground;
+    color: $darkTextColor;
+      
+        .navLink {
+          color: $darkTextColor;
+          margin: 1rem;
+        }
+    
+  }
+  
+  .party {
+    background-color: $partyBackground;
+    color: $partyTextColor;
+      
+        .navLink {
+          color: $partyTextColor;
+          margin: 1rem;
+        }
+      
+    
+  }
+}
+
+@media only screen and (min-width: 900px) { 
   .cool-guy{
     margin:1rem;
     font-size: 2.5rem;
     font-family: 'Kaushan Script', cursive;
   }
-  .navfunctions {
-    display:flex;
-    .site-nav {
-      margin: 5rem;
-      .navLink {
-        font-family: 'Recursive', sans-serif;
-        margin: 1rem;
+
+  .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 150%;
+  
+    .navfunctions {
+      display:flex;
+      .site-nav {
+        margin: 5rem;
+        .navLink {
+          font-family: 'Recursive', sans-serif;
+          margin: 1rem;
+        }
+      }
+    }
+  
+  }
+  
+  .default {
+    background-color: $defaultBackground;
+    .navfunctions {
+      display:flex;
+      .site-nav {
+        margin: 5rem;
+        .navLink {
+          color: $defaultTextColor;
+          margin: 1rem;
+        }
       }
     }
   }
-
-}
-
-.default {
-  background-color: $defaultBackground;
-  .navfunctions {
-    display:flex;
-    .site-nav {
-      margin: 5rem;
-      .navLink {
-        color: $defaultTextColor;
-        margin: 1rem;
+  
+  .dark {
+    background-color: $darkBackground;
+    color: $darkTextColor;
+    .navfunctions {
+      display:flex;
+      .site-nav {
+        margin: 5rem;
+        .navLink {
+          color: $darkTextColor;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  
+  .party {
+    background-color: $partyBackground;
+    color: $partyTextColor;
+    .navfunctions {
+      display:flex;
+      .site-nav {
+        margin: 5rem;
+        .navLink {
+          color: $partyTextColor;
+          margin: 1rem;
+        }
       }
     }
   }
 }
-
-.dark {
-  background-color: $darkBackground;
-  color: $darkTextColor;
-  .navfunctions {
-    display:flex;
-    .site-nav {
-      margin: 5rem;
-      .navLink {
-        color: $darkTextColor;
-        margin: 1rem;
-      }
-    }
-  }
-}
-
-.party {
-  background-color: $partyBackground;
-  color: $partyTextColor;
-  .navfunctions {
-    display:flex;
-    .site-nav {
-      margin: 5rem;
-      .navLink {
-        color: $partyTextColor;
-        margin: 1rem;
-      }
-    }
-  }
-}
+  

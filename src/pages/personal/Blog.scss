@@ -1,39 +1,59 @@
 @import '../../variable';
 
-
-.normal {
-  .blogContent {
-  display: flex;
+@media only screen and (max-width: 900px) {
+  img {
+    max-width: 80%;
   }
-}
 
-.reverse {
-  .blogContent {
-  display: flex;
-  flex-direction: row-reverse;
-}
-}
-
-.blogContent {
-  align-items: center;
-  p {
-    margin: 3rem;
-    font-size: x-large;
+  .blogContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
 }
 
-.default {
-  background-color: $defaultBackground;
-  color: $defaultBackground;
-}
+@media only screen and (min-width: 900px) {
+  img {
+    max-width: 40%;
+  }
 
-.dark {
-  background-color: $darkBackground;
-  color: $darkTextColor;
-}
-
-.party {
-  background-color: $partyBackground;
-  color: $partyTextColor;
-
+  .normal {
+    .blogContent {
+    display: flex;
+    }
+  }
+  
+  .reverse {
+    .blogContent {
+    display: flex;
+    flex-direction: row-reverse;
+    }
+  }
+  
+  
+  
+  .blogContent {
+    align-items: center;
+    p {
+      margin: 3rem;
+      font-size: x-large;
+    }
+  }
+  
+  .default {
+    background-color: $defaultBackground;
+    color: $defaultBackground;
+  }
+  
+  .dark {
+    background-color: $darkBackground;
+    color: $darkTextColor;
+  }
+  
+  .party {
+    background-color: $partyBackground;
+    color: $partyTextColor;
+  }
 }
