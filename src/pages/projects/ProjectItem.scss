@@ -1,6 +1,94 @@
 @import "../../variable";
 
 .project-item-body {
+  opacity: 0.6;
+  h4 {
+    font-family: $alt-text;
+    font-size: x-large;
+  }
+  p {
+    font-size: x-large;
+  }
+  .project-card {
+    width: 60%;
+    height: 4rem;
+    .slider{
+      background-color: rgb(255, 228, 228);
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+
+  .projectInfo {
+    display: flex;
+    p {
+      font-size: large;
+    }
+  }
+  
+  .default {
+    color: $defaultTextColor;
+    a {
+      color: $defaultTextColor;
+    }
+    .slider{
+      background-color: rgb(255, 228, 228);
+      
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute;
+    }
+  }
+  
+  .dark {
+    color: $darkTextColor;
+    a {
+      color: $darkTextColor;
+    }
+    .slider{
+      background-color: rgb(211, 74, 74);
+      
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute
+    }
+  }
+  
+  .party {
+    color: $partyTextColor;
+    a {
+      color: $partyTextColor;
+    }
+    .slider{
+      background-color: rgb(29, 27, 27);
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 200px;
+      width:30%;
+      height: 4rem;
+      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
+      position:absolute
+    }
+  }
+}
+
+.project-item-body:hover {
+
+  opacity: 1;
 
   h4 {
     font-family: $alt-text;
@@ -25,10 +113,6 @@
     }
   }
   
-
-  .project-card:hover .slider {
-    transform: translateX(60%);
-  }
 
   .projectInfo {
     display: flex;
@@ -88,9 +172,7 @@
   }
 }
 
-
-
-
-
-
+.project-item-body:hover .slider {
+  transform: translateX(60%);
+}
 

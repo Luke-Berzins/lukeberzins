@@ -17,7 +17,7 @@ export default function Projects(props) {
         <ProjectItem 
           className=""
           name="Reflexion"
-          picture=""
+          picture="builder2.png"
           description="Reflexion is a home yoga app which puts the power of yoga in your hands. Users are free to build their own yoga sequences with an intuitive drag-and-drop interface, guided into each pose with their webcam as a mirror, and can control the app with voice commands captured by Tensorflow.js and interpreted by Google's Teachable Machine."
           git="https://github.com/Luke-Berzins/Reflexion"
           site=""
@@ -40,7 +40,7 @@ export default function Projects(props) {
           picture=""
           description="Make an appoinment!"
           git="https://github.com/Luke-Berzins/Interview-Scheduler"
-          site=""
+          site="https://elegant-blackwell-57bd5a.netlify.app/"
           display=""
           stack=""
         />
@@ -68,7 +68,7 @@ export default function Projects(props) {
           className=""
           name="TinyApp"
           picture=""
-          description="Online Shoe Store"
+          description="App where I was introduced to account and user handling."
           git="https://github.com/Luke-Berzins/tinyapp"
           site=""
           display=""
