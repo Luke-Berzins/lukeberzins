@@ -14,11 +14,11 @@ body{
     max-width: 40%;
   }
   .personal-holder {
-    margin-left: 15%;
+    margin-left: 5%;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     h1 {
       font-family: $alt-text;
     }
@@ -38,7 +38,7 @@ body{
   }
 
   .blog-holder {
-    width: 80%;
+    width: 95%;
     margin: 4rem;
   }
 }
@@ -52,7 +52,7 @@ body{
   }
   .finalfill {
       width: 100%;
-      height: 800px;
+      height: 600px;
       background-color:$defaultBackground;
   }
 }

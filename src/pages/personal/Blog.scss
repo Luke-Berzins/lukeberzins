@@ -1,38 +1,39 @@
 @import '../../variable';
 
 
+.normal {
+  .blogContent {
+  display: flex;
+  }
+}
+
+.reverse {
+  .blogContent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+}
+
+.blogContent {
+  align-items: center;
+  p {
+    margin: 3rem;
+    font-size: x-large;
+  }
+}
+
 .default {
   background-color: $defaultBackground;
   color: $defaultBackground;
-  .normal {
-    display: flex;
-  }
-  .reverse {
-    display: flex;
-    flex-direction: row-reverse;
-  }
 }
 
 .dark {
   background-color: $darkBackground;
   color: $darkTextColor;
-  .normal {
-    display: flex;
-  }
-  .reverse {
-    display: flex;
-    flex-direction: row-reverse;
-  }
 }
 
 .party {
   background-color: $partyBackground;
   color: $partyTextColor;
-  .normal {
-    display: flex;
-  }
-  .reverse {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+
 }
