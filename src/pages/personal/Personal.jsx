@@ -23,13 +23,21 @@ export default function Personal(props) {
         <div className="blog-holder">
           <Blog 
           theme={theme}
+          img='personalImg/lake.jpeg'
           blogType={"normal"}
           text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most recently, I have been working as a Regional Liaison Officer for the Canadian Armed Forces. This has been a fantastic role where I have liaisoned with the great people at the Office of the Fire Marshall and Emergency Management and various Public Health units across Ontario, in order to keep our various organitzations fully coordinated as we defeat the COVID-19 pandemic."
           />
           <Blog 
           theme={theme}
+          img='personalImg/arty.jpeg'
           blogType={"reverse"}
-          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I heard about this role because I am an Army Reservist, specifically Artillery. I have served with the 11th Field Artillery Regiment for three and a half years and recieved some of the best experiences of my life."
+          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I heard about this role because I am an Army Reservist, specifically Artillery. I have served with the 11th Field Artillery Regiment for three and a half years and recieved some of the best experiences of my life. My training has qualified me as a Reconnaissance Officer, Command Post Officer and Gun Postition Officer. This training all took place at the Infantry School and Artillery School, under the national Combat-Training-Center in Gagetown New Brunswick. On the right, you can see me using a Prismatic Compass (uses a magnifying glass) to pass orientation to a 105mm Artillery gun before a direct-fire Fire Mission."
+          />
+           <Blog 
+          theme={theme}
+          img='personalImg/train.jpeg'
+          blogType={"normal"}
+          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before I started working full-time for the Army, I was a part-time Reservist. During this period, my full-time job was a Train Conductor at Canadian National Railway. You can see behind the veil of the Locomotive windshield on the left picture. This is an AWESOME job. I loved it and would reccomend it to anyone. Anyone who didn't discover that they really like coding and building things."
           />
         </div>
       </div>
