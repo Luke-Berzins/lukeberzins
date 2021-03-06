@@ -14,16 +14,17 @@ export default function ProjectItem(props) {
         </div>
       <div className="projectInfo">
         <div>
-          <a href={props.git}>{props.git ? <h5>Github: {props.git}</h5> : <h5></h5>}</a>
-          <a href={props.site}>{props.site ? <h5>Live site: {props.site}</h5> : <h5></h5>}</a>
+          <a href={props.git}>{props.git ? <h5>Github: {props.name}</h5> : null}</a>
+          <a href={props.site}>{props.site ? <h5>Live site: {props.site}</h5> : null}</a>
         </div>
       </div>
       </div>
         <div className="desc-container">
-          <img src={props.picture}></img>
+          <img alt="project-img" src={props.picture}></img>
           <p>{props.description}</p>
         </div>
     </div>
+    <br></br> 
     </div>
   )
 }

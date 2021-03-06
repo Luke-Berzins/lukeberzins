@@ -9,6 +9,15 @@
   p {
     font-size: x-large;
   }
+.desc-container {
+  display: flex;
+  align-items: center;
+  img {
+    margin: 3rem;
+  }
+
+}
+
   .project-card {
     width: 60%;
     height: 4rem;
@@ -42,7 +51,6 @@
     }
     .slider{
       background-color: rgb(255, 228, 228);
-      
       border-top-right-radius: 200px;
       border-bottom-right-radius: 200px;
       width:30%;
@@ -79,7 +87,6 @@
       border-top-right-radius: 200px;
       border-bottom-right-radius: 200px;
       width:30%;
-      height: 4rem;
       transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
       position:absolute
     }
@@ -174,5 +181,10 @@
 
 .project-item-body:hover .slider {
   transform: translateX(60%);
+}
+
+br {
+  border-color: black;
+  line-height: 2px;
 }
 

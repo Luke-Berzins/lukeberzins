@@ -3,7 +3,6 @@ import ProjectItem from "./ProjectItem"
 import "./Projects.scss"
 import { useTheme } from '../../ThemeContext'
 
-
 export default function Projects(props) {
   const theme = useTheme()
 
@@ -17,7 +16,7 @@ export default function Projects(props) {
         <ProjectItem 
           className=""
           name="Reflexion"
-          picture="builder2.png"
+          picture="projectsImg/builder2.png"
           description="Reflexion is a home yoga app which puts the power of yoga in your hands. Users are free to build their own yoga sequences with an intuitive drag-and-drop interface, guided into each pose with their webcam as a mirror, and can control the app with voice commands captured by Tensorflow.js and interpreted by Google's Teachable Machine."
           git="https://github.com/Luke-Berzins/Reflexion"
           site=""
@@ -27,7 +26,7 @@ export default function Projects(props) {
         <ProjectItem 
           className=""
           name="Jungle"
-          picture=""
+          picture="projectsImg/jungle.jpg"
           description="An e-commerce site built with Ruby on Rails, users can add or remove items from their cart, see their total and pay for their order using their credit card. Products can be marked available or sold out, and administrators can organize items in categories."
           git="https://github.com/Luke-Berzins/Jungle"
           site=""
