@@ -4,7 +4,7 @@ html{
   min-height:100%;
   position:relative;
 }
-body{
+body {
   height:100%; 
 
   p {
@@ -330,4 +330,25 @@ body{
       background-color:$partyBackground;
   }
 }
+}
+
+@media only screen and (max-width: 900px) {
+  .personal-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0%;
+    img {
+      border-radius: 40%;
+      max-width: 50%;
+      max-height: 50%;
+      margin: 2rem;
+    }
+    .theme-buttons {
+      margin-top: 1rem;
+      align-self: center;
+      max-width: 1rem;
+    }
+  }
+
 }
