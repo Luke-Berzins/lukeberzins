@@ -19,13 +19,13 @@ export default function Personal(props) {
           <h3>519-533-8637</h3>
           <h3><a href="https://github.com/Luke-Berzins">Luke's Github</a></h3>
         </div>
-          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started my coding journey a little bit late. The amount I've learned since I started coding has only fueled my desire to learn more and become better. I am confident that with enough time I will do some really cool things, and I hope you check in the future so I can continue to share them with you. Although I wish I had found my love for code earlier in life, I spent my time before fairly well. I've driven trains for Canadian National, sighted in artillery pieces by compass and climbed a mountain or two. If you want to read about my experience before I started coding and know more about me as a person, read below.</h2>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My coding journey began a little late. I am confident that with enough time I will do some really cool things, and I hope you continue to check in the future so I can share them with you. Before I started coding I was a train conductor for Canadian National Railway, a reserve Army Officer and I even climbed a mountain or two. If you want to know more about me, read on.</h2>
         <div className="blog-holder">
           <Blog 
           theme={theme}
           img='personalImg/lake.jpeg'
           blogType={"normal"}
-          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most recently, I have been working as a Regional Liaison Officer for the Canadian Armed Forces. This has been a fantastic role where I have liaisoned with the great people at the Office of the Fire Marshall and Emergency Management and various Public Health units across Ontario. We work together to ensure that all of our various organizations' resources are working together, and that we are constantly communicating with each other."
+          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most recently, I have been working as a Regional Liaison Officer for the Canadian Armed Forces. I have liaisoned with the Office of the Fire Marshall and Emergency Management and various Public Health units across Ontario. We work together to ensure that all of our various organizations' resources are configured optimally in response to the COVID-19 crisis."
           />
           <Blog 
           theme={theme}
