@@ -26,6 +26,10 @@ body{
       font-family: $alt-text;
     }
   }
+  .finalfill {
+    width: 100%;
+    height: 100%;
+}
 }
 
 .default {
@@ -34,12 +38,6 @@ body{
   .projects-intro{
     padding-top: 1rem;
     background-color: $defaultBackground;
-
-  }
-  .finalfill {
-      width: 100%;
-      height: 800px;
-      background-color:$defaultBackground;
   }
 }
 
@@ -50,11 +48,7 @@ body{
     padding-top: 1rem;
     background-color: $darkBackground;
   }
-    .finalfill {
-      width: 100%;
-      height: 800px;
-      background-color:$darkBackground;
-  }
+
 }
 
 .party {
@@ -64,9 +58,4 @@ body{
     background-color: $partyBackground;
   }
     
-    .finalfill {
-      width: 100%;
-      height: 800px;
-      background-color:$partyBackground;
-  }
 }

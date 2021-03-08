@@ -14,12 +14,12 @@
     margin-left: 2rem;
     
     .navfunctions {
+      align-self: center;
       .site-nav {
         display:flex;
-        flex-direction: column;
-     
         .navLink {
           font-family: 'Recursive', sans-serif;
+          align-self: center;
         }
       }
     }

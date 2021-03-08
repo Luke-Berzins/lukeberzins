@@ -335,19 +335,20 @@ body {
 @media only screen and (max-width: 900px) {
   .personal-block {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column-reverse;
+    justify-content: center;
     margin-bottom: 0%;
     img {
       border-radius: 40%;
       max-width: 50%;
       max-height: 50%;
       margin: 2rem;
+      align-self: center;
     }
+
     .theme-buttons {
       margin-top: 1rem;
       align-self: center;
-      max-width: 1rem;
     }
   }
 
