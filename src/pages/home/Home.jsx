@@ -20,7 +20,7 @@ export default function Home(props) {
                     <button className="btn btn--stripe" onClick={() => toggleTheme('party')}  >Party Mode</button>
                     <button className="btn btn--stripe" onClick={() => toggleCat()}>{cat ?  'please click' : 'do not click'}</button>
           </div>
-          {cat ? <img alt="good-looking-dude" src="kitty/kitty-main.jpeg"></img> : <img alt="good-looking-dude" src="me.jpeg"></img>}
+          {cat ? <img alt="good-looking-dude" className="home-pic" src="kitty/kitty-main.jpeg"></img> : <img alt="good-looking-dude" className="home-pic" src="me.jpeg"></img>}
         </div>
         <div className="personal-text">
         {cat ? <p>Hello good friends. I'm fatcat. Everything Luke owns is mine and now this website is mine. You can still click around to see some projects and learn more about my servant.</p> : <p> I'm Luke Berzins, a Junior Web Developer. I like learning new things and making cool stuff happen. Click below or use the nav bar.</p>}

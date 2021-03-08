@@ -19,7 +19,7 @@ export default function Personal(props) {
           <h3>519-533-8637</h3>
           <h3><a href="https://github.com/Luke-Berzins">Luke's Github</a></h3>
         </div>
-          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My coding journey began a little late. I am confident that with enough time I will do some really cool things, and I hope you continue to check in the future so I can share them with you. Before I started coding I was a train conductor for Canadian National Railway, a reserve Army Officer and I even climbed a mountain or two. If you want to know more about me, read on.</h2>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My coding journey began a little late. I am confident that with enough time I'll do some really cool things, and I hope you continue to check in so I can share them with you. Before I started coding I was a train conductor for Canadian National Railway, a reserve Army Officer and I even climbed a mountain or two. If you want to know more about me, read on.</h2>
         <div className="blog-holder">
           <Blog 
           theme={theme}
@@ -31,13 +31,13 @@ export default function Personal(props) {
           theme={theme}
           img='personalImg/arty.jpeg'
           blogType={"reverse"}
-          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started working as a Regional Liaison Officer through my experience as an Army Reservist. I have served with the 11th Field Artillery Regiment for three and a half years and recieved some of the best experiences of my life. My training has qualified me as a Reconnaissance Officer, Command Post Officer and Gun Postition Officer. This training all took place at the Infantry School and Artillery School, under the national Combat-Training-Center in Gagetown, New Brunswick. On the right, you can see me using a Prismatic Compass (uses a magnifying glass) to pass orientation to a 105mm Artillery gun before a direct-fire Fire Mission."
+          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started working as a Regional Liaison Officer through my experience as an Army Reservist. I have served with the 11th Field Artillery Regiment for three and a half years and had some great experiences. My training qualified me as a Reconnaissance Officer, a Command Post Officer and a Gun Postition Officer. This took place at the Infantry School and Artillery School, under the national Combat-Training-Center in Gagetown, New Brunswick. That's me using a Prismatic Compass (has a built-in magnifying glass) to pass orientation to a 105mm Artillery gun before a direct-fire Fire Mission."
           />
            <Blog 
           theme={theme}
           img='personalImg/train.jpeg'
           blogType={"normal"}
-          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before I started working full-time for the Army, I was a part-time Reservist. During this period, my full-time job was a Train Conductor at Canadian National Railway. You can see behind the veil of the Locomotive windshield on the left picture. This is an AWESOME job. I loved it and would reccomend it to anyone. Well, anyone who didn't discover that they really like coding and building things."
+          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before I started working full-time for the Army I was a part-time Reservist. My full-time job was a Train Conductor for Canadian National Railway. You can see behind the veil of the Locomotive windshield on the left picture. This is an AWESOME job. I loved it and would recommend it to anyone. Well, anyone who hasn't discovered that they really like coding."
           />
         </div>
       </div>

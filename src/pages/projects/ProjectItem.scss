@@ -13,6 +13,7 @@
   }
   p {
     font-size: x-large;
+    margin: 0rem;
   }
 .desc-container {
   display: flex;
@@ -29,7 +30,6 @@
 
   
     .slider{
-      background-color: rgb(255, 228, 228);
       border-top-right-radius: 200px;
       border-bottom-right-radius: 200px;
       border-top-left-radius: 50px;
@@ -38,39 +38,25 @@
       transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
       position:absolute;
       display: flex;
-      justify-content: center;
+      justify-content:  space-between;
       align-items: center;
       width: 20%;
-    }
-  }
-  
 
-  .projectInfo {
-    display: flex;
-    p {
-      font-size: large; 
-    }
-    .web-links {
-      display: flex;
-      p {
+      .web-links {
         font-family: $body-text;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
       }
     }
   }
   
+
+ 
   .default {
     color: $defaultTextColor;
     a {
       color: $defaultTextColor;
-    }
-    .slider{
-      background-color: rgb(255, 228, 228);
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      width:30%;
-      height: 4rem;
-      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute;
     }
   }
   
@@ -79,29 +65,12 @@
     a {
       color: $darkTextColor;
     }
-    .slider{
-      background-color: rgb(211, 74, 74);
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      width:30%;
-      height: 4rem;
-      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute
-    }
   }
   
   .party {
     color: $partyTextColor;
     a {
       color: $partyTextColor;
-    }
-    .slider{
-      background-color: rgb(29, 27, 27);
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      width:30%;
-      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute
     }
   }
 }
@@ -114,7 +83,7 @@
     width: 60%;
     height: 4rem;
     .slider{
-      background-color: rgb(255, 228, 228);
+      
       border-top-right-radius: 200px;
       border-bottom-right-radius: 200px;
       border-top-left-radius: 50px;
@@ -126,55 +95,18 @@
     }
   }
   
-
   
   .default {
     color: $defaultTextColor;
-    a {
-      color: $defaultTextColor;
-    }
-    .slider{
-      background-color: rgb(255, 228, 228);
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      width:30%;
-      height: 4rem;
-      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute
-    }
   }
   
   .dark {
     color: $darkTextColor;
-    a {
-      color: $darkTextColor;
-    }
-    .slider{
-      background-color: rgb(211, 74, 74);
-      
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      width:30%;
-      height: 4rem;
-      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute
-    }
+
   }
   
   .party {
     color: $partyTextColor;
-    a {
-      color: $partyTextColor;
-    }
-    .slider{
-      background-color: rgb(29, 27, 27);
-      border-top-right-radius: 200px;
-      border-bottom-right-radius: 200px;
-      width:30%;
-      height: 4rem;
-      transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute
-    }
   }
 }
 
@@ -182,10 +114,6 @@
   transform: translateX(60%);
 }
 
-br {
-  border-color: black;
-  line-height: 2px;
-}
 
 @media only screen and (max-width: 1600px) {
   .slider {

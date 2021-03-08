@@ -14,15 +14,25 @@ html{
 }
 body{
   height:100%; 
+  img {
+    animation: none;
+  }    
+
   p {
     font-family: 'Recursive', sans-serif;
+    padding: 1rem;
   }
   .none {
     display: none;
   }
+  .kitty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .projects-body {
-    margin-left: 15%;
+    
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -48,6 +58,7 @@ body{
   color: $defaultBackground;
   .projects-intro{
     padding-top: 1rem;
+    padding-left: 3rem;
     background-color: $defaultBackground;
   }
 }
