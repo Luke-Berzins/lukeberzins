@@ -18,7 +18,8 @@ html {
       }
     } 
     .body-container {
-      height: 100vh;
+      height: auto;
+      width: auto;
       display:flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -257,4 +258,28 @@ html {
     }
   }
 
+}
+@media only screen and (max-width : 280px) {
+  html {
+    body {
+      .default {
+        .body-container {
+          background-color: $defaultBackground;
+        }
+      }
+      .dark {
+        .body-container {
+          background-color: $darkBackground;
+        }
+      }
+      .party {
+        .body-container {
+          background-color: $partyBackground;
+        }
+      } 
+      .body-container {
+        width: 120vw;
+      }
+    }
+  }  
 }
