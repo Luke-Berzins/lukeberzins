@@ -7,6 +7,7 @@
 .project-item-body {
   opacity: 0.6;
   scroll-snap-align: start;
+  
   h4 {
     font-family: $alt-text;
     font-size: x-large;
@@ -18,12 +19,11 @@
 .desc-container {
   display: flex;
   align-items: center;
-  img {
-    margin: 3rem;
+    img {
+      margin: 3rem;
+    }
   }
-
-}
-
+  
   .project-card {
     width: 60%;
     height: 4rem;
@@ -47,32 +47,14 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        font-size: x-large;
+        
+        
       }
     }
   }
   
 
- 
-  .default {
-    color: $defaultTextColor;
-    a {
-      color: $defaultTextColor;
-    }
-  }
-  
-  .dark {
-    color: $darkTextColor;
-    a {
-      color: $darkTextColor;
-    }
-  }
-  
-  .party {
-    color: $partyTextColor;
-    a {
-      color: $partyTextColor;
-    }
-  }
 }
 
 .project-item-body:hover {
@@ -91,23 +73,12 @@
       
       height: 4rem;
       transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
-      position:absolute
+      position:absolute;
     }
   }
   
   
-  .default {
-    color: $defaultTextColor;
-  }
   
-  .dark {
-    color: $darkTextColor;
-
-  }
-  
-  .party {
-    color: $partyTextColor;
-  }
 }
 
 .project-item-body:hover .slider {
@@ -125,11 +96,35 @@
   .mobile-title {
     display: inline;
   }
-  .projectInfo {
-
-    .web-links {
-      flex-direction: column-reverse;
+  .project-card {
+    .mobile-title {
+      a {
+        padding: 1rem;
+      }
     }
   }
+  .default .project-item-body .mobile-title a {
+    color: $defaultTextColor;
+  }
+  .dark .project-item-body .mobile-title a {
+    color: $darkTextColor;
+  }
+  .party .project-item-body .mobile-title a {
+    color: $partyTextColor;
+  }
+}
 
+.project-item-body .project-card .slider .web-links a {
+  
+  padding: 1rem;
+}
+.project-item-body .default .project-card .slider .web-links a {
+  color: $defaultTextColor;
+}
+
+.project-item-body .dark .project-card .slider .web-links a {
+  color: $darkTextColor;
+}
+.project-item-body .party .project-card .slider .web-links a {
+  color: $partyTextColor;
 }

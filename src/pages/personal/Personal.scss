@@ -11,16 +11,27 @@ body{
     height: 100%;
   }
 }
+.default .personal-holder .personal-info h3 a {
+  color: $defaultTextColor;
+}
+.dark .personal-holder .personal-info h3 a {
+  color: $darkTextColor;
+}
+
+.party .personal-holder .personal-info h3 a {
+  color: $partyTextColor;
+}
 @media only screen and (max-width: 900px) {
    p {
     font-family: 'Montserrat', sans-serif;
     padding:1rem;
     }
-
+    h1 {
+      margin: 0;
+    }
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: xx-large;
-      padding: -2rem;
     }
   
   .default {

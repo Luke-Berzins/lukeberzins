@@ -1,25 +1,26 @@
 import React from 'react'
-import { useCatTheme } from '../../ThemeContext'
+import { useCatTheme, useTheme } from '../../ThemeContext'
 import './ProjectItem.scss'
 
 export default function ProjectItem(props) {
   const cat = useCatTheme()
+  const theme = useTheme()
 
   return (
     <div className="project-item-body">
-      <div className={props.theme}>
+      <div className={theme}>
         <div className="project-card">
-          <div className="mobile-title" id="mobile-title">
-            <h4>{props.name}</h4>
-            <a href={props.git} target="_blank" rel="noreferrer">{props.git ?   <p>Github</p> : null}</a>
-            <a href={props.site} target="_blank" rel="noreferrer">{props.site ?   <p>Live site</p> : null}</a>
+            <div className="mobile-title" id="mobile-title">
+              <h4>{props.name}</h4>
+              <a href={props.git} target="_blank" rel="noreferrer">{props.git ?   "Github" : null}</a>
+              <a href={props.site} target="_blank" rel="noreferrer">{props.site ?   "Live site" : null}</a>
             </div>
           <div className="slider">
-           <h4>{props.name}</h4>
-          <div className="web-links">
-            <a href={props.git} target="_blank" rel="noreferrer">{props.git ?   <p>Github</p> : null}</a>
-            <a href={props.site} target="_blank" rel="noreferrer">{props.site ?   <p>Live site</p> : null}</a>
-          </div>
+            <h4>{props.name}</h4>
+            <div className="web-links" id="web-links">
+              <a href={props.git} target="_blank" rel="noreferrer">{props.git ?   "Github": null}</a>
+              <a  href={props.site} target="_blank" rel="noreferrer">{props.site ?   "Live site": null}</a>
+            </div>
           </div>
         <div className="projectInfo">
         </div>
