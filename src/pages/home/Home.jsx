@@ -31,7 +31,7 @@ export default function Home(props) {
       <h3><NavLink className="navLink" to="/personal">{cat ? 'meow' : 'personal'}</NavLink></h3>
         </div>
       </div>
-      <div className="finalfill"></div>
+     
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Home from './pages/home/Home'
 import Projects from './pages/projects/Projects'
 import Personal from './pages/personal/Personal'
 import { ThemeProvider } from './ThemeContext'
+import './App.scss'
 
 function App() {
   
