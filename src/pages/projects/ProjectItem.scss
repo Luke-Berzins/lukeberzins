@@ -142,3 +142,26 @@
     }
   
 }
+
+@keyframes ProjectAni {
+  3% {
+    transform: rotate(15deg);
+  }
+  9% {
+    transform: rotate(-30deg);
+  }
+  12% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotateY(180deg);
+  }
+  23% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+
+}

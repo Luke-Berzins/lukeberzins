@@ -39,20 +39,20 @@
   }
   
   @keyframes blogAni {
-    5% {
+    3% {
       transform: rotate(15deg);
     }
-    15% {
+    9% {
       transform: rotate(-30deg);
     }
-    20% {
+    12% {
       transform: rotate(0deg);
     }
 
-    50% {
+    20% {
       transform: rotateY(180deg);
     }
-    60% {
+    23% {
       transform: rotateY(0deg);
     }
     100% {
@@ -83,7 +83,7 @@
     background-color: $partyBackground;
     color: $partyTextColor;
     .blogContent .blog-pic {
-      animation: blogAni 20s infinite linear;
+      animation: blogAni 60s infinite linear;
       }
     
   }
