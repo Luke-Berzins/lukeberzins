@@ -23,7 +23,7 @@ export default function Home(props) {
           {cat ? <img alt="good-looking-dude" className="home-pic" src="kitty/kitty-main.jpeg"></img> : <img alt="good-looking-dude" className="home-pic" src="me.jpeg"></img>}
         </div>
         <div className="personal-text">
-        {cat ? <p>Hello good friends. I'm fatcat. Everything Luke owns is mine and now this website is mine. You can still click around to see some projects and learn more about my servant.</p> : <p> I'm Luke Berzins, a Junior Web Developer. I like learning new things and making cool stuff happen. Click below or use the nav bar.</p>}
+        {cat ? <p>Hello good friends. I'm fatcat. Everything Luke owns is mine and now this website is mine. You can still click around to see some projects and learn more about my servant, but know the content has changed.</p> : <p> I'm Luke Berzins, a Junior Web Developer. I like learning new things and making cool stuff happen. Everything on this site I made myself, with no templates (although I do know how to use them). Click below or use the nav bar.</p>}
         </div>
       <div className="extra-links">
       <h3><NavLink className="navLink" to="/">{cat ? 'meow' : 'home'}</NavLink></h3>

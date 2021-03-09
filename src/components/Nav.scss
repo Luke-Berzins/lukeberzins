@@ -4,6 +4,7 @@
 @media only screen and (max-width: 900px) {
   .cool-guy{
     font-family: 'Kaushan Script', cursive;
+    font-size: xx-large;
   }
 
   .navbar-container{
@@ -19,6 +20,7 @@
       .site-nav {
         display:flex;
         .navLink {
+          font-size: xx-large;
           font-family: 'Recursive', sans-serif;
           align-self: center;
         }
@@ -62,7 +64,7 @@
 @media only screen and (min-width: 900px) { 
   .cool-guy{
     margin:1rem;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: 'Kaushan Script', cursive;
   }
 
@@ -70,11 +72,11 @@
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    font-size: 150%;
+    
     .navfunctions {
       display:flex;
       .site-nav {
-        margin: 5rem;
+        margin: 2rem;
         .navLink {
           font-family: 'Recursive', sans-serif;
           margin: 1rem;

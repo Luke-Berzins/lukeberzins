@@ -51,7 +51,7 @@ export default function Projects(props) {
          <ProjectItem 
           name="Sneek"
           picture="projectsImg/tinyapp.png"
-          description="This 👟  retail store is built with jQuery, EJS and Express. I was able to deep-dive into EJS when I implemented the site's chat function, which I'm particularly proud of. Although it may not have been optimal, my solution to create a user to user chat function on the site here unique, creative and most importantly, it taught me a lot."
+          description="This 👟  retail store is built with jQuery, EJS and Express. I was able to deep-dive into EJS when I implemented the site's chat function, which I'm particularly proud of. Although it may not have been optimal, my solution to create a user to user chat function on the site was unique, creative and most importantly, it taught me a lot."
           catDesc="No shoes in cat size...yet."
           git="https://github.com/Luke-Berzins/LighthouseMarketplace-Buy-Sell-Listing-Website"
           site=""
@@ -61,7 +61,7 @@ export default function Projects(props) {
         <ProjectItem 
           name="Tweeter"
           picture="projectsImg/tinyapp.png"
-          description="Tweeter is, as you might have guessed, a Twitter clone. Built with HTML, JavaScript, and JQuery, Tweeter was a fun learning project which also introduced us to important principles like responsive design."
+          description="Tweeter is, as you might have guessed, a Twitter clone. Built with HTML, JavaScript, and JQuery, Tweeter was a fun learning project which also introduced me to the important principle of responsive design."
           catDesc="If there wasn't a window between me and this bird you'd see some action."
           git="https://github.com/Luke-Berzins/tweeter"
           site=""
@@ -71,7 +71,7 @@ export default function Projects(props) {
         <ProjectItem 
           name="TinyApp"
           picture="projectsImg/tinyapp.png"
-          description="App where I was introduced to account and user handling. Built with EJS it allows users to securely handle their profile. It also introduced me to the implementation of cookies 🍪."
+          description="My first app. This is where I was introduced to account and user handling. It is built with EJS it allows users to securely handle their profile of shortened URLs. It also introduced me to the implementation of cookies 🍪."
           catDesc="Luke's first project, I sat watching him the whole time. The. Whole. Time."
           git="https://github.com/Luke-Berzins/tinyapp"
           site=""

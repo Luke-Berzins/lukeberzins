@@ -6,8 +6,8 @@
 
 .project-item-body {
   opacity: 0.6;
-  padding-top: 8rem;
-  scroll-snap-align: start;
+  padding-top: 6rem;
+  
   
   h4 {
     font-family: $alt-text;
@@ -38,7 +38,8 @@
       display: flex;
       justify-content:  space-around;
       align-items: center;
-      width: 20%;
+      width: 30%;
+      padding-left: 4rem;
 
       .web-links {
         font-family: $body-text;
@@ -65,7 +66,6 @@
       border-bottom-right-radius: 200px;
       border-top-left-radius: 50px;
       border-bottom-left-radius: 50px;
-      
       height: 4rem;
       transition: 2s cubic-bezier(0.56,-0.16, 0.66, 1.58);
       position:absolute;
@@ -81,7 +81,11 @@
 }
 
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1200px) {
+  
+  .project-item-body {
+    opacity: 1;
+  }
   .slider {
     opacity: 0;
   }
@@ -121,4 +125,20 @@
 }
 .project-item-body .party .project-card .slider .web-links a {
   color: $partyTextColor;
+}
+
+@media only screen and (max-width: 600px) {
+  .default .project-card .desc-container {
+    width: 100vw;
+  }
+  .project-item-body .default {
+      width: 100vw;
+    }
+    .project-item-body .dark {
+      width: 100vw;
+    }
+    .project-item-body .party {
+      width: 100vw;
+    }
+  
 }

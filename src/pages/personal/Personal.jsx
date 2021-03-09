@@ -19,7 +19,7 @@ export default function Personal(props) {
           <h3>519-533-8637</h3>
           <h3><a href="https://github.com/Luke-Berzins">Luke's Github</a></h3>
         </div>
-          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My coding journey began a little late. I am confident that with enough time I'll do some really cool things, and I hope you continue to check in so I can share them with you. Before I started coding I was a train conductor for Canadian National Railway, a reserve Army Officer and I even climbed a mountain or two. If you want to know more about me, read on.</h2>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My coding journey began a little late. I am confident that with enough time I'll do some really cool things, and I hope you continue to check in so I can share them with you. Before I started coding I was a train conductor for Canadian National Railway, a reserve Army Officer and I even climbed a mountain or two. If you want to know more about me, read on.</p>
         <div className="blog-holder">
           <Blog 
           theme={theme}

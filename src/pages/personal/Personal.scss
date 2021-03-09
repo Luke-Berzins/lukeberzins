@@ -13,13 +13,10 @@
    p {
     font-family: 'Montserrat', sans-serif;
     padding:1rem;
+    font-size: small;
     }
     h1 {
       margin: 0;
-    }
-    h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: xx-large;
     }
   
   .default {
@@ -51,6 +48,7 @@
 @media only screen and (min-width: 900px) { 
     p {
       font-family: 'Recursive', sans-serif;
+      font-size: x-large;
       padding:2rem;
     }
     .personal-holder {

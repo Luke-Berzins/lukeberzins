@@ -50,6 +50,12 @@ body{
   .default {
     background-color: $defaultBackground;
   }
+  .dark {
+    background-color: $darkBackground;
+  }
+  .party {
+    background-color: $partyBackground;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -62,10 +68,8 @@ body{
     font-family: $body-text;
     font-size: xx-large;
   }
-}
-
-@media only screen and (max-width : 480px) {
-  body .default .projects-body {
-    width: 120vw;
+  .projects-body   {
+    width: 100vw;
   }
 }
+
