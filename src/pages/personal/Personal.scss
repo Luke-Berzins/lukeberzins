@@ -1,23 +1,11 @@
 @import "../../variable";
 
-html{
-  min-height:100%;
-  position:relative;
-}
-body{
-  height:100%;
-  .finalfill {
-    width: 100%;
-    height: 100%;
-  }
-}
 .default .personal-holder .personal-info h3 a {
   color: $defaultTextColor;
 }
 .dark .personal-holder .personal-info h3 a {
   color: $darkTextColor;
 }
-
 .party .personal-holder .personal-info h3 a {
   color: $partyTextColor;
 }
@@ -58,7 +46,6 @@ body{
       background-color: $partyBackground;
     }
   }
-
 }
 
 @media only screen and (min-width: 900px) { 
