@@ -38,7 +38,28 @@
     }
   }
   
-  
+  @keyframes blogAni {
+    5% {
+      transform: rotate(15deg);
+    }
+    15% {
+      transform: rotate(-30deg);
+    }
+    20% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotateY(180deg);
+    }
+    60% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+
+  }
   
   .blogContent {
     align-items: center;
@@ -61,5 +82,9 @@
   .party {
     background-color: $partyBackground;
     color: $partyTextColor;
+    .blogContent .blog-pic {
+      animation: blogAni 20s infinite linear;
+      }
+    
   }
 }
