@@ -1,5 +1,29 @@
 @import '../../variable';
 
+
+@keyframes blogAni {
+  3% {
+    transform: rotate(15deg);
+  }
+  9% {
+    transform: rotate(-30deg);
+  }
+  12% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotateY(180deg);
+  }
+  23% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
 @media only screen and (max-width: 900px) {
   img {
     max-width: 80%;
@@ -15,7 +39,14 @@
     font-size: xx-large;
   }
 
-
+  .party {
+    background-color: $partyBackground;
+    color: $partyTextColor;
+    .blogContent .blog-pic {
+      animation: blogAni 45s infinite linear;
+      }
+    
+  }
 
 }
 
@@ -38,28 +69,7 @@
     }
   }
   
-  @keyframes blogAni {
-    3% {
-      transform: rotate(15deg);
-    }
-    9% {
-      transform: rotate(-30deg);
-    }
-    12% {
-      transform: rotate(0deg);
-    }
 
-    20% {
-      transform: rotateY(180deg);
-    }
-    23% {
-      transform: rotateY(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-
-  }
   
   .blogContent {
     align-items: center;

@@ -22,24 +22,19 @@ export default function Personal(props) {
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My coding journey began a little late. I am confident that with enough time I'll do some really cool things, and I hope you continue to check in so I can share them with you. Before I started coding I was a train conductor for Canadian National Railway, a reserve Army Officer and I even climbed a mountain or two. If you want to know more about me, read on.</p>
         <div className="blog-holder">
           <Blog 
-          theme={theme}
           img={cat ? "kitty/couch.jpg" : 'personalImg/lake.jpeg'}
           blogType="normal"
           text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most recently, I have been working as a Regional Liaison Officer for the Canadian Armed Forces. I have liaisoned with the Office of the Fire Marshall and Emergency Management and various Public Health units across Ontario. We work together to ensure that all of our various organizations' resources are configured optimally in response to the COVID-19 crisis."
           />
           <Blog 
-          theme={theme}
-          catImg=""
           img='personalImg/arty.jpeg'
           blogType="reverse"
           text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started working as a Regional Liaison Officer through my experience as an Army Reservist. I have served with the 11th Field Artillery Regiment for three and a half years and had some great experiences. My training qualified me as a Reconnaissance Officer, a Command Post Officer and a Gun Postition Officer. This took place at the Infantry School and Artillery School, under the national Combat-Training-Center in Gagetown, New Brunswick. That's me using a Prismatic Compass (has a built-in magnifying glass) to pass orientation to a 105mm Artillery gun before a direct-fire Fire Mission."
           />
            <Blog 
-          theme={theme}
-          catImg=""
           img='personalImg/train.jpeg'
           blogType="normal"
-          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before I started working full-time for the Army I was a part-time Reservist. My full-time job was a Train Conductor for Canadian National Railway. You can see behind the veil of the Locomotive windshield in this picture. This is an AWESOME job. I loved it and would recommend it to anyone. Well, anyone who hasn't discovered that they really like coding."
+          text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before I started working full-time for the Army I was a part-time Reservist. My full-time job was a Train Conductor for Canadian National Railway. You can see behind the veil of the Locomotive windshield in this picture. This is an AWESOME job. I loved it and I would recommend it to anyone. Well, anyone who hasn't discovered that they really like coding."
           />
         </div>
       </div>

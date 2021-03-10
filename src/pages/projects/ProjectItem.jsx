@@ -17,6 +17,10 @@ export default function ProjectItem(props) {
             </div>
           <div className="slider">
             <h4>{props.name}</h4>
+              <div>
+                <h4 className={theme === 'party' ? "arty1" : "none"}>Load!</h4>
+                <h4 className={theme === 'party' ? "arty2" : "none"}>Fire!</h4>
+              </div>
             <div className="web-links" id="web-links">
               <a href={props.git} target="_blank" rel="noreferrer">{props.git ?   "Github": null}</a>
               <a  href={props.site} target="_blank" rel="noreferrer">{props.site ?   "Live site": null}</a>

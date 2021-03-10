@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Blog.scss"
+import { useTheme } from "../../ThemeContext"
 
 export default function Blog(props) {
+  const theme = useTheme();
+
   return (
-    <div className={props.theme}>
+    <div className={theme}>
       <div className={props.blogType}>
         <div className="blogContent">
         <img alt="blog-pic" className="blogPic" src={props.img} className="blog-pic"></img>

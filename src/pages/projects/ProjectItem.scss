@@ -76,7 +76,11 @@
   
 }
 
-.project-item-body:hover .slider {
+.project-item-body:hover .default .slider {
+  transform: translateX(60%);
+}
+
+.project-item-body:hover .dark .slider {
   transform: translateX(60%);
 }
 
@@ -143,25 +147,80 @@
   
 }
 
-@keyframes ProjectAni {
-  3% {
-    transform: rotate(15deg);
+@keyframes projectAniLinks {
+  10% {
+    transform: translateX(-100%)
   }
-  9% {
-    transform: rotate(-30deg);
-  }
-  12% {
-    transform: rotate(0deg);
-  }
-
   20% {
-    transform: rotateY(180deg);
+    transform: translateX(-100%)
   }
-  23% {
-    transform: rotateY(0deg);
+  
+  
+  40% {
+    transform: translateX(400%)
   }
-  100% {
-    transform: rotate(0deg);
+ 
+
+}
+
+@keyframes cannon {
+  10% {
+    transform: rotate(0deg)
+  }
+  20% {
+    transform: rotate(-20deg)
+  }
+  40% {
+    transform: rotate(0deg)
   }
 
+}
+
+@keyframes command1 {
+  10% {
+    visibility: visible;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+  20% {
+    visibility: hidden;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+}
+@keyframes command2 {
+  1% {
+    visibility: hidden;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+  20% {
+    visibility: hidden;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+  21% {
+    visibility: visible;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+  30% {
+    visibility: hidden;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+}
+
+
+
+.party {
+
+  .slider {
+    animation: cannon 15s infinite linear;
+    .web-links {
+      animation: projectAniLinks 15s infinite linear;
+    }
+    .arty1 {
+      visibility: hidden;
+      animation: command1 15s infinite linear;
+    }
+    .arty2 {
+      visibility: hidden;
+      animation: command2 15s infinite linear;
+    }
+  }
 }
