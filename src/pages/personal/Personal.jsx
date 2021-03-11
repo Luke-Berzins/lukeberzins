@@ -2,12 +2,15 @@ import React from "react"
 import { useTheme, useCatTheme } from "../../ThemeContext"
 import Blog from "./Blog"
 import "./Personal.scss"
+import Nav from '../.././components/Nav'
 
 export default function Personal(props) {
   const theme = useTheme();
   const cat = useCatTheme();
 
   return (
+    <div>
+      <Nav />
     <div className={theme}>
       <div className="personal-holder">
         <div className="personal-intro">
@@ -39,6 +42,7 @@ export default function Personal(props) {
         </div>
       </div>
 
+    </div>
     </div>
   )
 }

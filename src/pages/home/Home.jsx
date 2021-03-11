@@ -1,5 +1,6 @@
 import React from "react"
 import './Home.scss'
+import Nav from '../.././components/Nav'
 import { useTheme, useThemeUpdate, useCatTheme, useCatUpdate } from '../../ThemeContext'
 import {
   NavLink
@@ -11,6 +12,8 @@ export default function Home(props) {
   const toggleCat = useCatUpdate()
 
   return (
+    <div>
+      <Nav />
     <div className={theme}>
       <div className='body-container'>
         <div className="personal-block">
@@ -32,6 +35,7 @@ export default function Home(props) {
         </div>
       </div>
      
+    </div>
     </div>
   )
 }

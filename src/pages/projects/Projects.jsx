@@ -2,12 +2,16 @@ import React from "react"
 import ProjectItem from "./ProjectItem"
 import "./Projects.scss"
 import { useTheme, useCatTheme } from '../../ThemeContext'
+import Nav from '../.././components/Nav'
 
 export default function Projects(props) {
   const theme = useTheme();
   const cat = useCatTheme();
 
   return (
+    <div>
+      <Nav />
+
     <div className={theme}>
       <div className="projects-body">
         <div className="projects-intro">
@@ -80,6 +84,7 @@ export default function Projects(props) {
         />
         </div>
       </div>
+    </div>
     </div>
   )
 }
