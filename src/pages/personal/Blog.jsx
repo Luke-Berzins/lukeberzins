@@ -9,7 +9,7 @@ export default function Blog(props) {
     <div className={theme}>
       <div className={props.blogType}>
         <div className="blogContent">
-        <img alt="blog-pic" className="blogPic" src={props.img} className="blog-pic"></img>
+        <img alt="blog-pic" src={props.img} className="blog-pic"></img>
         <p>{props.text}</p>
         </div>
       </div>

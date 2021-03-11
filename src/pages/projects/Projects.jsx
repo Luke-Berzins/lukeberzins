@@ -50,7 +50,7 @@ export default function Projects(props) {
         />
          <ProjectItem 
           name="Sneek"
-          picture="projectsImg/tinyapp.png"
+          picture="projectsImg/sneek.png"
           description="This 👟  retail store is built with jQuery, EJS and Express. I was able to deep-dive into EJS when I implemented the site's chat function, which I'm particularly proud of. Although it may not have been optimal, my solution to create a user to user chat function on the site was unique, creative and most importantly, it taught me a lot."
           catDesc="No shoes in cat size...yet."
           git="https://github.com/Luke-Berzins/LighthouseMarketplace-Buy-Sell-Listing-Website"
@@ -60,7 +60,7 @@ export default function Projects(props) {
         />
         <ProjectItem 
           name="Tweeter"
-          picture="projectsImg/tinyapp.png"
+          picture="projectsImg/tweeter.png"
           description="Tweeter is, as you might have guessed, a Twitter clone. Built with HTML, JavaScript, and JQuery, Tweeter was a fun learning project which also introduced me to the important principle of responsive design."
           catDesc="If there wasn't a window between me and this bird you'd see some action."
           git="https://github.com/Luke-Berzins/tweeter"
