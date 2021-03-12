@@ -6,7 +6,7 @@ import Intro from './pages/intro/Intro'
 import Projects from './pages/projects/Projects'
 import Personal from './pages/personal/Personal'
 import { ThemeProvider } from './ThemeContext'
-import './App.scss'
+
 
 function App() {
   
@@ -14,14 +14,14 @@ function App() {
     <Router>
       <ThemeProvider  >
         <Switch>
+          <Route path="/intro">
+            <Intro />
+          </Route>
           <Route path="/projects">
             <Projects />
           </Route>
           <Route path="/personal">
             <Personal />
-          </Route>
-          <Route path="/intro">
-            <Intro />
           </Route>
           <Route path="/">
             <Home />
