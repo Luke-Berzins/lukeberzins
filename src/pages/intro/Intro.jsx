@@ -21,19 +21,18 @@ export default function Intro() {
   return (
     <div>
     <div className="intro-container">
-      <h1>Luke Berzins</h1>
-      <br></br>
-      <br></br>
-    
-
+      
     <div className="parallax-holder">
+
+    <div className="name" >
+        <h1>Luke Berzins</h1>
+      </div>
         
         <img src='/intro/sky.png'  
         alt="intro-pic" 
         className="sky"
         style={{
-          filter: `blur(4px)`,
-          transform: `translateY(${offset * 0.5}px)`
+          transform: `translateY(${offset * 0.84}px)`
         }}
         ></img> 
         
@@ -41,21 +40,24 @@ export default function Intro() {
         alt="intro-pic" 
         className="background" 
         style={{
-          transform: `translateY(${offset * 0.52}px)`
+          transform: `translateY(${offset * 0.85}px)`
         }}
         ></img>          
        
         <img src="/intro/midground.png" 
         alt="intro-pic2" 
         className="midground" 
-        style={{
-          transform: `translateY(${offset * 0.54}px)`
-        }}
+        style={
+          offset < 200 ? 
+          {transform: `translateY(${offset * 0.89}px)`}
+          : {transform: `translateY(195px)`}
+        }
         ></img>  
 
         <img src="/intro/foreground.png" 
         alt="intro-pic2" 
         className="foreground"
+        
         ></img>   
                
     </div>
@@ -67,13 +69,12 @@ export default function Intro() {
 
       </div>
     <div className="intro-content"> 
-      <div className="intro-text">
-          <h3 className="intro-title">Hi!</h3>
-          <p>Hello cool dufdesas awhartaalfa; asfsafasfas sadefasf asdfe hqfwqfwa fqfre wqwfqw function gfq gf qwgf( ef) </p>
+      <div className="intro-title" >
+        <h1>Enter ></h1>
       </div>
 
       <div className="intro-pic">
-        <img src="/intro/intro.jpeg" alt="intro-pic2" className="intro-picture"></img>  
+        <img src="/intro/digital.png" alt="intro-pic2" className="intro-picture"></img>  
       </div>
     </div>
       </section>  
