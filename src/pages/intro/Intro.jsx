@@ -70,7 +70,7 @@ export default function Intro() {
       </div>
     <div className="intro-content"> 
       <div className="intro-title" >
-        <h1>Enter ></h1>
+        <h1>Enter </h1>
       </div>
 
       <div className="intro-pic">
