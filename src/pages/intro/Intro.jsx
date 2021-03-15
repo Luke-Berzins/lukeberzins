@@ -48,9 +48,9 @@ export default function Intro() {
         alt="intro-pic2" 
         className="midground" 
         style={
-          offset < 200 ? 
+          offset < 120 ? 
           {transform: `translateY(${offset * 0.89}px)`}
-          : {transform: `translateY(195px)`}
+          : {transform: `translateY(120px)`}
         }
         ></img>  
 
