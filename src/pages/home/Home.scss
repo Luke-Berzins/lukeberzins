@@ -4,208 +4,286 @@
 html {
   $val : $defaultBackground;
   background-color: $val;
- 
-  @mixin mode($value) {
-    @if $value == default {
-      $val : $defaultBackground;
+
+  .party {
+    $val : $partyBackground;
+    background-color: $val;
+  }
+  .dark {
+    $val : $darkBackground;
+    background-color: $val;
+  }
+
+
+    .body-container {
+
+      height: auto;
+      width: auto;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 120vh;
+      .personal-block {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .personal-text {
+        font-size: x-large;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .extra-links {
+        display: flex;
+        align-self: center;
+        h3 {
+          padding-right: 3rem;
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
     }
-    @else if $value == dark {
-      $val : $darkBackground;
+    .personal-block {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0%;
+      img {
+        border-radius: 40%;
+        max-width: 40%;
+        max-height: 40%;
+        margin: 2rem;
+      }
+      .theme-buttons {
+        margin-top: 1rem;
+        align-self: center;
+      }
+  }
+
+
+
+
+@mixin reset-button {
+  overflow : visible;
+  margin : 0;
+  padding : 0;
+  border : 0;
+  background : transparent;
+  font-family: 'Bungee', cursive;
+  font-size: larger;
+  line-height : normal;
+  cursor : pointer;
+  -moz-user-select : text;
+  min-width: 15rem;
+  
+  &:-moz-focus-inner {
+      padding : 0;
+      border : 0;
+  }
+}
+
+@keyframes stripe-slide {
+  0% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
+}
+
+.btn {
+  @include reset-button;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 36px 22px;
+  background-color: $btn-background;
+  color: $btn-color;
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  transition: all .5s ease;
+  
+  &--stripe {
+      overflow: hidden;
+      position: relative;
+      
+      &:after {
+          content: '';
+          display: block;
+          height: $stripe-height;
+          width: 100%;
+          background-image: repeating-linear-gradient(
+              45deg,
+              $border-color,
+              $border-color 1px,
+              transparent 2px,
+              transparent 5px
+          );
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          border-top: 1px solid $border-color;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-size: $stripe-height $stripe-height;
+      }
+
+      &:hover {
+          background-color: $defaultBackground;
+          color: $btn-color-hover;
+          border-color: $border-color-hover;
+
+          &:after {
+              background-image: repeating-linear-gradient(
+                  45deg,
+                  $btn-color-hover,
+                  $btn-color-hover 1px,
+                  transparent 2px,
+                  transparent 5px
+              );
+              border-top: 1px solid $border-color-hover;
+              animation: stripe-slide 12s infinite linear forwards;
+          }
+      }
+  }
+}
+
+
+.default {
+  background-color: $defaultBackground;
+  color: $defaultTextColor;
+  .personal-text {
+    background-color: $defaultBackground;
+  }
+  p {
+    background-color: $defaultBackground;
+    margin-top: 0;
+  }
+  .navLink {
+    color: $defaultTextColor;
+    margin: 1rem;
+  }
+}
+
+.dark {
+  
+  
+  color: $darkTextColor;
+  p {
+    background-color: $darkBackground;
+    margin-top: 0;
+  }
+  .navLink {
+    color: $darkTextColor;
+    margin: 1rem;
+  }
+  .btn {
+      background-color: $darkBackground;
+      color: $btn-color-hover;
+      &:hover {
+          background-color: $darkBackground;
+      }
     }
-    @else if $value == party {
-      $val : $partyBackground;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(25deg);
+  }
+  30% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.party {
+  color: $partyTextColor;
+  
+    .home-pic {
+      animation: rotation 30s infinite linear;
+    }    
+    p {
+      margin-top: 0;
+    }
+  
+    .navLink {
+      color: $partyTextColor;
+      margin: 1rem;
+    }
+
+    .btn {
+      background: linear-gradient(to top, #8e59d3b7 0%, #7c91f1de 100%);
+      color: $btn-color-hover;
+          &:hover {
+              background-color: $partyBackground;
+          }
+          &:after {
+            background-image: repeating-linear-gradient(
+                45deg,
+                $btn-color-hover,
+                $btn-color-hover 1px,
+                transparent 2px,
+                transparent 5px
+            );
+            border-top: 1px solid $border-color-hover;
+            animation: stripe-slide 12s infinite linear forwards;
+        }
+      
+    }    
+}
+}
+
+@media only screen and (max-width: 900px) {
+  .personal-block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 0%;
+    img {
+      border-radius: 40%;
+      max-width: 50%;
+      max-height: 50%;
+      margin: 2rem;
+      align-self: center;
+    }
+
+    .theme-buttons {
+      margin-top: 1rem;
+      align-self: center;
     }
   }
 
 }
-
-//     .body-container {
-
-//       height: auto;
-//       width: auto;
-//       display:flex;
-//       flex-direction: column;
-//       justify-content: flex-start;
-//       align-items: center;
-//       height: 120vh;
-//       .personal-block {
-//         display:flex;
-//         justify-content: center;
-//         align-items: center;
-//       }
-//       .personal-text {
-//         font-size: x-large;
-//         margin-left: 5%;
-//         margin-right: 5%;
-//       }
-//       .extra-links {
-//         display: flex;
-//         align-self: center;
-//         h3 {
-//           padding-right: 3rem;
-//           font-family: 'Montserrat', sans-serif;
-//         }
-//       }
-//     }
-//     .personal-block {
-//       display: flex;
-//       justify-content: center;
-//       margin-bottom: 0%;
-//       img {
-//         border-radius: 40%;
-//         max-width: 40%;
-//         max-height: 40%;
-//         margin: 2rem;
-//       }
-//       .theme-buttons {
-//         margin-top: 1rem;
-//         align-self: center;
-//       }
-//   }
-
-
-
-
-
-// .default {
-//   background-color: $defaultBackground;
-//   color: $defaultTextColor;
-//   .personal-text {
-//     background-color: $defaultBackground;
-//   }
-//   p {
-//     background-color: $defaultBackground;
-//     margin-top: 0;
-//   }
-//   .navLink {
-//     color: $defaultTextColor;
-//     margin: 1rem;
-//   }
-// }
-
-// .dark {
-  
-//   background-color: $darkBackground;
-//   color: $darkTextColor;
-//   p {
-//     background-color: $darkBackground;
-//     margin-top: 0;
-//   }
-//   .navLink {
-//     color: $darkTextColor;
-//     margin: 1rem;
-//   }
-//   .btn {
-//       background-color: $darkBackground;
-//       color: $btn-color-hover;
-//       &:hover {
-//           background-color: $darkBackground;
-//       }
-//     }
-// }
-
-// @keyframes rotation {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   10% {
-//     transform: rotate(25deg);
-//   }
-//   30% {
-//     transform: rotate(-25deg);
-//   }
-//   50% {
-//     transform: rotate(180deg);
-//   }
-//   70% {
-//     transform: rotate(-180deg);
-//   }
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
-// .party {
-//   color: $partyTextColor;
-  
-//     .home-pic {
-//       animation: rotation 30s infinite linear;
-//     }    
-//     p {
-//       margin-top: 0;
-//     }
-  
-//     .navLink {
-//       color: $partyTextColor;
-//       margin: 1rem;
-//     }
-
-//     .btn {
-//       background: linear-gradient(to top, #8e59d3b7 0%, #7c91f1de 100%);
-//       color: $btn-color-hover;
-//           &:hover {
-//               background-color: $partyBackground;
-//           }
-//           &:after {
-//             background-image: repeating-linear-gradient(
-//                 45deg,
-//                 $btn-color-hover,
-//                 $btn-color-hover 1px,
-//                 transparent 2px,
-//                 transparent 5px
-//             );
-//             border-top: 1px solid $border-color-hover;
-//             animation: stripe-slide 12s infinite linear forwards;
-//         }
-      
-//     }    
-// }
-
-
-// @media only screen and (max-width: 900px) {
-//   .personal-block {
-//     display: flex;
-//     flex-direction: column-reverse;
-//     justify-content: center;
-//     margin-bottom: 0%;
-//     img {
-//       border-radius: 40%;
-//       max-width: 50%;
-//       max-height: 50%;
-//       margin: 2rem;
-//       align-self: center;
-//     }
-
-//     .theme-buttons {
-//       margin-top: 1rem;
-//       align-self: center;
-//     }
-//   }
-
-// }
-// @media only screen and (max-width : 280px) {
-//   html {
-//     body {
-//       .default {
-//         .body-container {
-//           background-color: $defaultBackground;
-//         }
-//       }
-//       .dark {
-//         .body-container {
-//           background-color: $darkBackground;
-//         }
-//       }
-//       .party {
-//         .body-container {
-//           background-color: $partyBackground;
-//         }
-//       } 
-//       .body-container {
-//         width: 120vw;
-//       }
-//     }
-//   }  
-// }
+@media only screen and (max-width : 280px) {
+  html {
+    body {
+      .default {
+        .body-container {
+          background-color: $defaultBackground;
+        }
+      }
+      .dark {
+        .body-container {
+          background-color: $darkBackground;
+        }
+      }
+      .party {
+        .body-container {
+          background-color: $partyBackground;
+        }
+      } 
+      .body-container {
+        width: 120vw;
+      }
+    }
+  }  
+}
 
 // @media only screen and (min-width : 1800px) {
 //   html {
@@ -249,4 +327,3 @@ html {
 //     }
 //   }  
 // }
-
