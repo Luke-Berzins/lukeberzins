@@ -20,6 +20,7 @@ export default function Intro() {
 
   return (
     <div>
+       
     <div className="intro-container">
       
     <div className="parallax-holder">
@@ -50,7 +51,7 @@ export default function Intro() {
         style={
           offset < 120 ? 
           {transform: `translateY(${offset * 0.89}px)`}
-          : {transform: `translateY(120px)`}
+          : {transform: `translateY(105px)`}
         }
         ></img>  
 
@@ -68,9 +69,12 @@ export default function Intro() {
       <div className="shadow">
 
       </div>
+      <div className="shadow-2">
+        
+      </div>
     <div className="intro-content"> 
       <div className="intro-title" >
-        <h1>Enter </h1>
+        <h1>Enter ➡️ </h1>
       </div>
 
       <div className="intro-pic">

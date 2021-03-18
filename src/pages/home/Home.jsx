@@ -14,7 +14,7 @@ export default function Home(props) {
   return (
     <div>
       <Nav />
-    <div className={theme}>
+    <div className={theme}> 
       <div className="fill"></div>
       <div className='body-container'>
         <div className="personal-block">
